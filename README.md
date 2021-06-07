@@ -64,7 +64,12 @@ http://localhost:8080/swagger-ui/index.html?url=/v3/api-docs
 
 ```
 
-  
+### Run Test Spring Boot:
+
+1. Right click on the project
+2. Select **Test** or **ALT + F6**
+
+![test](https://user-images.githubusercontent.com/85512533/121101289-8cd42780-c7c9-11eb-9299-5742ff4029ab.png)  
 
 
 # FrontEnd
