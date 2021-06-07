@@ -108,13 +108,20 @@ Please follow nexts steps.
 npm install
 
 ```
-5. Run Application with the command:
+5. If run npm and there is some issues: **found 37 vulnerabilities (36 moderate, 1 high)**, run:
+
+```
+npm audit fix
+
+```
+
+6. Run Application with the command:
 
 ```
 ng serve
 
 ```
-6. Open your browser on:
+7. Open your browser on:
 
 ```
 http://localhost:4200/
