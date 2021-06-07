@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+  <div class="card mx-auto">
+    <h5 class="card-header d-flex justify-content-center bg-success bg-gradient text-white">
+      <span class="mx-2 text-white">
+        <fa-icon [icon]="faCalculator"></fa-icon>
+      </span>
+    Calculator</h5>
+    <form [formGroup]="form">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="timepicker" class="text-success" >Select Time:</label>
+          <ngb-timepicker class="form-control d-flex justify-content-center" [seconds]="seconds" id="timepicker" onKeyDown="return false" formControlName="time"></ngb-timepicker>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="input-time" class="text-success">Select time difference:</label>
+          <input type="number" id="input-time" class="form-control" placeholder="" min="-12" max="14"  onKeyDown="return false" formControlName="timeDifference" required>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-success mr-2" type="button" [disabled]="!form.valid" (click)="calculate()">Send</button>
+        </div>
+        <hr>
+        <pre>response: {{ model | json}}</pre>
+      </div>
+    </form>
+  </div>
+</div>
